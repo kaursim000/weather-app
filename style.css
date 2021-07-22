@@ -1,0 +1,25 @@
+body{
+background-color: cadetblue;
+}
+article{
+    background-color: lightgrey;
+    width: auto;
+    height: 100px;
+    border: black 2px solid;
+    margin: 5px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#box{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+    border: black 2px solid;
+    margin: 5px;
+}

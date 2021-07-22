@@ -6,21 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-    <div class="flex-row align-center justify-center min-100-vh bg-primary">
+    <aside class="flex-row align-center justify-center min-100-vh bg-primary">
         <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
             <h1 class="text-primary">Search for a City:</h1>
             <form id="userInput" class="form w-100">
                 <input id="searchInputVal" class="form-input w-100" type="text" placeholder="Search!">
                 <button type="submit" class="btn btn-info btn-block" id="submitBtn">Search</button>
             </form>
+    </aside>
+    <article class="card">
+        <div id="forecast">
+            <p id="temp"> </p>
+            <p id="windspeed"> </p>
+            <p id="humidity"> </p>
+        </div>
+    </article>
+    <section>
+        <div id="box">
+            <p id="temp0"> </p>
+            <p id="windspeed0"> </p>
+            <p id="humidity0"> </p>
+        </div>
+        <div id="box">
+            <p id="temp8"> </p>
+            <p id="windspeed8"> </p>
+            <p id="humidity8"> </p>
+        </div>
+
+        <div id="box">
+            <p id="temp16"> </p>
+            <p id="windspeed16"> </p>
+            <p id="humidity16"> </p>
+        </div>
+
+        <div id="box">
+            <p id="temp24"> </p>
+            <p id="windspeed24"> </p>
+            <p id="humidity24"> </p>
+        </div>
+
+        <div id="box">
+            <p id="temp32"> </p>
+            <p id="windspeed32"> </p>
+            <p id="humidity32"> </p>
+        </div>
+    </section>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
